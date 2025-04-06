@@ -1,0 +1,10 @@
+defaults:
+  - tgi_schema
+  - params: tgi_params
+
+name: "google/flan-t5-xxl"
+type: "TGI"
+endpoint: "http://localhost"
+health_endpoint: "/health"
+port: 8080
+manage_server: True

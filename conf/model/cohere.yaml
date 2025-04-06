@@ -1,0 +1,6 @@
+defaults:
+  - default_model_schema
+  - params: cohere_params
+
+name: "command"
+type: "COHERE"

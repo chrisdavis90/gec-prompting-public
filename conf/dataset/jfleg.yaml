@@ -1,0 +1,5 @@
+defaults:
+  - jfleg_schema
+
+name: jfleg_dataset
+split: dev

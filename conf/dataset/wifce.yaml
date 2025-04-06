@@ -1,0 +1,5 @@
+defaults:
+  - wifce_schema
+
+name: wifce_dataset
+split: train2000

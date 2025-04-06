@@ -1,0 +1,4 @@
+defaults:
+  - params: hf_params
+
+name: "databricks/dolly-v2-7b"

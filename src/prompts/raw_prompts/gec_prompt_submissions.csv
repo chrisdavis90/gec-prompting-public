@@ -1,0 +1,71 @@
+Timestamp,Name,Prompt text,Is your prompt zero- or few-shot?,"If few-shot, how many examples did you include?","Did you take inspiration from a paper/previous work? If so, include the reference here.",Anything else you would like to add:
+7/17/2023 21:58:55,Andrew Caines,"Reply with a corrected version of the input sentence with all grammatical and spelling errors fixed. If there are no errors, reply with a copy of the original sentence.
+
+Input sentence: I think smoke should to be ban in all restarants. 
+Corrected sentence: I think smoking should be banned at all restaurants.
+
+Input sentence: We discussed about the issu.
+Corrected sentence: We discussed the issue.
+
+Input sentence: {text}
+Corrected sentence:",Few-shot,2,"Coyne et al, Analyzing the Performance of GPT-3.5 and GPT-4 in Grammatical Error Correction","I'll have a think and add some more, but wanted to get this one on record"
+7/20/2023 7:55:19,ChrisB,Correct the errors. Do not paraphrase.,Zero-shot,0,No,I didn't try the prompt - just coming up with ideas!
+7/20/2023 7:56:10,ChrisB,Grammar. ,Zero-shot,0,No,"I didn't try the prompt - just coming up with ideas!
+Hypothesis: the word grammar may be enough to focus the model attention."
+7/20/2023 7:59:34,ChrisB,Make minimal changes to the following text such that it is grammatically correct.,Zero-shot,0,no,I didn't try the prompt - just coming up with ideas!
+7/20/2023 8:02:19,ChrisB,"You are an English language teacher. A student has sent you the following essay. 
+{text}
+Correct the errors in the essay that will best help the student to learn from their mistakes.",Zero-shot,0,no,I didn't try the prompt - just coming up with ideas!
+7/20/2023 17:33:18,Shiva,"You are an English language teacher. A student has sent you the following text. 
+{text}
+Provide a grammatical correction for the text, making only necessary changes. Do not provide any additional comments or explanations. If the input text is already correct, return it unchanged.",Zero-shot,,This is a combination of Chris B's last prompt and the prompt from the RANLP paper.,I liked the teacher role in Chris B's prompt. But I also found it necessary to add the instruction for not generating additional comments
+7/21/2023 16:50:16,Marek,"You are a grammatical error correction tool. Your task is to correct the grammaticality and spelling in the input sentence. Make the smallest possible change in order to make the sentence grammatically correct. Change as few words as possible. Do not rephrase parts of the sentence that are already grammatical. Do not change the meaning of the sentence by adding or removing information. If the sentence is already grammatically correct, you should output the original sentence without changing anything. 
+
+Input sentence: {text}
+Output sentence: ",Zero-shot,,,
+7/21/2023 16:50:41,Marek,"You are a grammatical error correction tool. Your task is to correct the grammaticality and spelling in the input sentence. Make the smallest possible change in order to make the sentence grammatically correct. Change as few words as possible. Do not rephrase parts of the sentence that are already grammatical. Do not change the meaning of the sentence by adding or removing information. If the sentence is already grammatically correct, you should output the original sentence without changing anything. 
+
+Input sentence: ""{text}""
+Output sentence: """,Zero-shot,,,
+7/21/2023 16:51:39,Marek,"You are a grammatical error correction tool. Your task is to correct the grammaticality and spelling in the input sentence. Make the smallest possible change in order to make the sentence grammatically correct. Change as few words as possible. Do not rephrase parts of the sentence that are already grammatical. Do not change the meaning of the sentence by adding or removing information. If the sentence is already grammatically correct, you should output the original sentence without changing anything. 
+
+Here are some example corrections.
+
+Input sentence: ""I love this sport. I look forward to the weakened, to go out with my bike and my group of friends.""
+Corrected sentence: ""I love this sport. I look forward to the weekend to go out with my bike and my group of friends.""
+
+Input sentence: ""Lucy Keyes was the last thriller I've seen.""
+Corrected sentence: ""Lucy Keyes was the last thriller I saw.""
+
+Input sentence: ""In the biggest cities around the world the traffic nonstop and increase every day.""
+Corrected sentence: ""In the biggest cities around the world, the traffic is nonstop and increasing every day.""
+
+Input sentence: ""Also, the satisfaction of the customers pushes me to work harder and be better at my job.""
+Corrected sentence: ""Also, the satisfaction of the customers pushes me to work harder and be better at my job.""
+
+Input sentence: ""{text}""
+Output sentence: """,Few-shot,4,,
+7/21/2023 16:51:56,Marek,"You are a grammatical error correction tool. Your task is to correct the grammaticality and spelling in the input sentence. Make the smallest possible change in order to make the sentence grammatically correct. Change as few words as possible. Do not rephrase parts of the sentence that are already grammatical. Do not change the meaning of the sentence by adding or removing information. If the sentence is already grammatically correct, you should output the original sentence without changing anything. 
+
+Here are some example corrections.
+
+Input sentence: ""I love this sport. I look forward to the weakened, to go out with my bike and my group of friends.""
+Analysis: The context indicates that the sentence is about the speaker's anticipation for the weekend, therefore ""weakened"" is probably a misspelling and should be corrected to ""weekend"". The comma should also be removed, as the conjunction ""to"" already binds the two sentence parts together.
+Corrected sentence: ""I love this sport. I look forward to the weekend to go out with my bike and my group of friends.""
+
+Input sentence: ""Lucy Keyes was the last thriller I've seen.""
+Analysis: The input sentence implies that the action of watching the movie ""Lucy Keyes"" is ongoing or has relevance to the present, which is not the case. The past simple tense should be used instead of the present perfect tense.
+Corrected sentence: ""Lucy Keyes was the last thriller I saw.""
+
+Input sentence: ""In the biggest cities around the world the traffic nonstop and increase every day.""
+Analysis: 1. A comma was inserted after ""world"". This is required to separate the introductory phrase from the main sentence, improving readability. 2. The word ""is"" was added before ""nonstop"". This was added to ensure verb agreement in the sentence, making sure each subject (traffic) has a corresponding verb (is). 3. Changed ""increase"" to ""increasing"" - ""Increasing"" is the correct form to use after ""is"", to maintain the correct verb tense (present continuous) throughout the sentence. It describes an ongoing action.
+Corrected sentence: ""In the biggest cities around the world, the traffic is nonstop and increasing every day.""
+
+Input sentence: ""Also, the satisfaction of the customers pushes me to work harder and be better at my job.""
+Analysis: The input sentence is grammatically correct, no further corrections required.
+Corrected sentence: ""Also, the satisfaction of the customers pushes me to work harder and be better at my job.""
+
+Input sentence: ""{text}""
+Output sentence: """,Few-shot,4,,"My submissions all might need a bit of adjustment if you use a dialogue-based LLM (like ChatGPT) as opposed to a completion-oriented LLM. For dialogue models, remove the last line (""Output sentence: """") and hopefully the dialogue agent will generate it by itself."
+7/25/2023 19:02:52,Øistein,"Please correct the following text.  Do not attempt to rewrite it into perfect English or to interpret the text. Often, things could be expressed better by paraphrase, but the task is to make minimal changes to correct the text.  Do not change anything that is correct.  Please make no changes if there are no errors.",Zero-shot,,Diane Nicholls (2003). The Cambridge Learner Corpus: Error coding and analysis for lexicography and ELT.,"I wanted to submit a version of this prompt with an example as well, but the one I had in mind only appears in a private document."
+,Andrew Caines,Correct this to standard English:,Zero-shot,,"This is from Yulong Lin's dissertation: he states that it was a starting point, based on the OpenAI prompt for GEC. He also uses the Coyne & Sakaguchi best prompt as another starting point; this has evolved into the Coyne et al one above in row 2","Yulong runs a bunch of prompt tuning experiments, including minor changes to wording and punctuation, also an interesting one on specificity of the instruction (do you have his diss? need to get you a copy if not). In the end he concludes: We see that while increasing specificity increased performance for zero-shot and one-shot learning, the performance boost was not evident when we reached eight examples. This suggests that the number of examples, and potentially the examples chosen, may have much more of an effect on performance than the prompt. -- we can use this as inspiration for focusing on few-shot, and methods for selecting examples."

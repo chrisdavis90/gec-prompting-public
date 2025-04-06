@@ -1,0 +1,11 @@
+defaults:
+  - params_schema
+
+_target_: "params.HFParams"
+gen_kwargs: {
+  "temperature": 0.1,
+  "return_full_text": False,
+  "do_sample": True,
+  "top_k": 50,}
+  
+name: "temp=${str:${model.params.gen_kwargs.temperature}}_topk=${str:${model.params.gen_kwargs.top_k}}"

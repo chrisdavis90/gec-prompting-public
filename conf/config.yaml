@@ -1,0 +1,20 @@
+defaults: 
+  - base_config
+  - dataset: wifce
+  - model: tgi
+  - _self_
+
+base_dir: "output_test"
+out_dir: "${base_dir}/${enumstr:${dataset.name}}_${enumstr:${dataset.split}}_${mstr:${model.name}}_${pstr:${prompt_type}}_${str:${prompt_index}}_${model.params.name}"
+run_prefix: "run_"
+
+prompt_type: "1-shot-template"
+prompt_index: 1
+retrieval_file: "/path/to/corpora/wi+locness/paired/ABC.train.detok.paired"
+retrieval_index: 5
+len_multi: 1.5
+
+verbose: False
+batch: 1
+seed: 42
+dry_run: False

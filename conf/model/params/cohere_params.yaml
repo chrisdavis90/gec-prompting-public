@@ -1,0 +1,12 @@
+defaults:
+  - params_schema
+
+_target_: "params.CohereParams"
+gen_kwargs: {
+  "temperature": 0.1,
+  "num_generations": 1,
+  "return_likelihoods": "ALL",
+  "k": 50,
+  "p": 1,}
+
+name: "temp=${str:${model.params.gen_kwargs.temperature}}_topk=${str:${model.params.gen_kwargs.k}}_topp=${str:${model.params.gen_kwargs.p}}"

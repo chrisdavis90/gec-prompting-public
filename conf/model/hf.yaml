@@ -1,0 +1,6 @@
+defaults:
+  - default_model_schema
+  - params: hf_params
+
+name: "google/flan-t5-xxl"
+type: "HF"

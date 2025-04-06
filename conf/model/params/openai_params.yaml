@@ -1,0 +1,9 @@
+defaults:
+  - params_schema
+
+_target_: "params.OpenAIParams"
+gen_kwargs: {
+  "temperature": 0.1,
+  "top_p": 1.0,}
+
+name: "temp=${str:${model.params.gen_kwargs.temperature}}_topp=${str:${model.params.gen_kwargs.top_p}}"

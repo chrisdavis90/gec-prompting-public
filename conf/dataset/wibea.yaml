@@ -1,0 +1,5 @@
+defaults:
+  - wibea_schema
+
+name: wibea_dataset
+split: dev
