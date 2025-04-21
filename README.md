@@ -51,7 +51,7 @@ Setup your environment variables:
 
 # Data
 
-You can download a zip with the data from [OSF GEC Prompting](https://osf.io/4b5tg/)
+You can download a zip with the data from [OSF GEC Prompting](https://osf.io/4b5tg/?view_only=257be78670f04af184f742162d427122)
 
 # Prompts
 
